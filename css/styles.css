@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300);
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+.cover {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background: url(/img/feldflur.jpg) no-repeat center center fixed;
+  transition: scale 0.5s ease-out;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+.loading .cover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+main {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  bottom: 15%;
+  left: 0;
+  color: white;
+}
+h1 {
+  font-size: 3.7rem;
+  font-weight: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  text-rendering: optimizeLegibility;
+}
+p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  margin-bottom: 30px;
+  text-rendering: optimizeLegibility;
+}
+.location {
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.95rem;
+}
+a {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  margin: 0 20px;
+  transition: color ease-in-out 0.3s;
+}
+a:hover {
+  color: white;
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  visibility:hidden;
+  opacity: 0;
+  transition: visibility 0s ease-out 0.3s,opacity 0.3s ease-out;
+}
+.loading .loading-screen {
+  visibility:visible;
+  opacity: 1;
+}
+.sk-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.sk-spinner-pulse {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+          animation: sk-pulseScaleOut 1s infinite ease-in-out; 
+}
+@-webkit-keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); 
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; 
+  } 
+}
+@keyframes sk-pulseScaleOut {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); 
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0; 
+  } 
+}
+@-webkit-keyframes zoomOut {
+  from {
+    -webkit-transform: scale(1.07, 1.07);
+            transform: scale(1.07, 1.07);
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes zoomOut {
+  from {
+    -webkit-transform: scale(1.07, 1.07);
+            transform: scale(1.07, 1.07);
+  }
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+.zoomOut {
+  -webkit-animation: zoomOut 2.5s ease-out 0s;
+          animation: zoomOut 2.5s ease-out 0s;
+}
+@media screen and (max-width : 760px) {
+  body {
+    font-size: 16px;
+  }
+  .cover {
+    background: url(/img/feldflur_small.jpg) no-repeat center center fixed;
+  }
+  main {
+    bottom: 20px;
+  }
+  h1 {
+    margin-bottom: 15px;
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  p,
+  .location {
+    margin-bottom: 25px;
+  }
+  a {
+    font-size: 1.8rem;
+  }
+}
