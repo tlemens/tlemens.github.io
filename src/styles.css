@@ -49,13 +49,13 @@ body {
   line-height: 1.2;
   text-rendering: optimizeLegibility;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  text-shadow: 1px 1px 10px rgba(00, 00, 00, 0.3);
+  text-shadow: 1px 1px 10px rgba(00, 00, 00, 0.6);
 }
 .profession {
   padding: 1.1vw 0;
   color: rgba(255, 255, 255, 0.8);
   text-rendering: optimizeLegibility;
-  text-shadow: 1px 1px 10px rgba(00, 00, 00, 0.3);
+  text-shadow: 1px 1px 10px rgba(00, 00, 00, 0.6);
   font-size: 1.3vw;
 }
 .place {
