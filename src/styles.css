@@ -1,13 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300);
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 html, body {
   height: 100%;
-  margin: 0;
   overflow: hidden;
 }
 body {
   background-color: black;
   font-family: 'Roboto', sans-serif;
-  font-size: 22px;
   font-weight: 300;
 }
 .cover {
@@ -26,48 +30,54 @@ body {
 .loading .cover {
   transform: scale(1.2, 1.2);
 }
-main {
+.content {
   display: block;
-  height: auto;
-  margin: 0 auto;
-  width: 100%;
   position: fixed;
-  text-align: center;
-  bottom: 15%;
   left: 0;
+  bottom: 14%;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   color: white;
 }
-h1 {
-  font-size: 3.7rem;
+.name {
+  display: inline-block;
+  font-size: 4vw;
   font-weight: 100;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  display: inline-block;
-  line-height: 1;
-  margin: 0;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 10px rgba(00, 00, 00, 0.3);
 }
-p {
+.profession {
+  padding: 1.1vw 0;
   color: rgba(255, 255, 255, 0.8);
-  margin: 0;
-  margin-bottom: 30px;
   text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 10px rgba(00, 00, 00, 0.3);
+  font-size: 1.3vw;
 }
-.location {
-  margin-bottom: 50px;
+.place {
+  margin-bottom: 2vw;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 0.95rem;
+  font-size: 1vw;
+  padding-right: 1vw;
 }
-a {
-  font-size: 2rem;
-  color: rgba(255, 255, 255, 0.5);
+.profiles {
+  list-style: none;
+}
+.profiles li {
+  margin: 0 1vw;
   display: inline-block;
-  margin: 0 20px;
-  transition: color ease-in-out 0.3s;
 }
-a:hover {
-  color: white;
+.profiles li a {
+  font-size: 1.5vw;
+  transition: color ease-in-out 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+}
+.profiles li a:hover {
+  color: rgba(255, 255, 255, 0.9);
 }
 .loading-screen {
   position: fixed;
@@ -118,26 +128,27 @@ a:hover {
 .zoomOut {
   animation: zoomOut 2.5s ease-out 0s;
 }
+
 @media screen and (max-width : 760px) {
-  body {
-    font-size: 16px;
-  }
   .cover {
     background: url(/img/feldflur_small.jpg) no-repeat center center fixed;
   }
-  main {
-    bottom: 20px;
+  .name {
+    font-size: 8vw;
   }
-  h1 {
-    margin-bottom: 15px;
-    font-size: 3rem;
-    line-height: 1.1;
+  .profession {
+    padding: 2.6vw 0;
+    font-size: 3vw;
   }
-  p,
-  .location {
-    margin-bottom: 25px;
+  .place {
+    margin-bottom: 4vw;
+    font-size: 2vw;
+    padding-right: 2vw;
   }
-  a {
-    font-size: 1.8rem;
+  .profiles li {
+    margin: 0 2vw;
+  }
+  .profiles li a {
+    font-size: 4vw;
   }
 }
