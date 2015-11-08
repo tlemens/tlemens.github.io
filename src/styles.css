@@ -34,7 +34,7 @@ body {
   display: block;
   position: fixed;
   left: 0;
-  bottom: 12%;
+  bottom: 10%;
   width: 100%;
   height: auto;
   margin: 0;
@@ -52,14 +52,14 @@ body {
   text-shadow: 1px 1px 10px rgba(00, 00, 00, 0.6);
 }
 .profession {
-  padding: 1vw 0;
+  padding: 1.3vw 0;
   color: rgba(255, 255, 255, 0.8);
   text-rendering: optimizeLegibility;
   text-shadow: 1px 1px 10px rgba(00, 00, 00, 0.6);
-  font-size: 1.4vw;
+  font-size: 1.3vw;
 }
 .place {
-  margin-bottom: 2vw;
+  margin-bottom: 3vw;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1vw;
   padding-right: 1vw;
@@ -68,11 +68,11 @@ body {
   list-style: none;
 }
 .profiles li {
-  margin: 0 1vw;
+  margin: 0 1.5vw;
   display: inline-block;
 }
 .profiles li a {
-  font-size: 1.7vw;
+  font-size: 2vw;
   transition: color ease-in-out 0.3s;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -143,12 +143,12 @@ body {
     font-size: 3vw;
   }
   .place {
-    margin-bottom: 4vw;
+    margin-bottom: 6vw;
     font-size: 2vw;
     padding-right: 2vw;
   }
   .profiles li {
-    margin: 0 2vw;
+    margin: 0 3vw;
   }
   .profiles li a {
     font-size: 4vw;
