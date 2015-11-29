@@ -52,7 +52,7 @@ body {
   text-shadow: 1px 1px 10px rgba(00, 00, 00, 0.6);
 }
 .profession {
-  padding: 1.3vw 0;
+  padding: 1.5vw 0;
   color: rgba(255, 255, 255, 0.8);
   text-rendering: optimizeLegibility;
   text-shadow: 1px 1px 10px rgba(00, 00, 00, 0.6);
@@ -128,15 +128,16 @@ body {
 .zoomOut {
   animation: zoomOut 2.5s ease-out 0s;
 }
-
 @media screen and (max-width : 760px) {
   .cover {
     background: url(/img/feldflur_small.jpg) no-repeat center center fixed;
   }
 }
+@media screen and (max-width : 760px),
 @media (orientation: portrait) {  
   .name {
     font-size: 8vw;
+    text-shadow: 1px 1px 10px rgba(00, 00, 00, 1);
   }
   .profession {
     padding: 2.6vw 0;
@@ -152,5 +153,19 @@ body {
   }
   .profiles li a {
     font-size: 4vw;
+  }
+}
+@media screen and (max-width : 760px) and (orientation: portrait) {
+  .profession {
+    font-size: 3.2vw;
+  }
+  .place {
+    margin-bottom: 14vw;
+  }
+  .profiles li {
+    margin: 0 4vw;
+  }
+  .profiles li a {
+    font-size: 8vw;
   }
 }
